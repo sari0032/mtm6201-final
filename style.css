@@ -1,0 +1,438 @@
+/* =========================================================
+   Active Life Centre — style.css
+   Custom theme layered on top of Bootstrap 5
+   ========================================================= */
+
+/* ---------- Design tokens ---------- */
+:root {
+  --al-navy-900: #0b1530;
+  --al-navy-800: #101f45;
+  --al-navy-700: #16295c;
+  --al-blue: #3d63e0;
+  --al-blue-dark: #2f4fc0;
+  --al-green: #1fae59;
+  --al-green-dark: #189249;
+  --al-orange: #f2a33e;
+  --al-orange-dark: #d98c28;
+  --al-red: #e5484d;
+  --al-gray-050: #f5f6f8;
+  --al-gray-100: #eceff3;
+  --al-gray-500: #6b7280;
+  --al-gray-900: #1f2937;
+  --al-font-display: "Poppins", sans-serif;
+  --al-font-body: "Inter", sans-serif;
+
+  /* Bootstrap root overrides */
+  --bs-primary: var(--al-blue);
+  --bs-primary-rgb: 61, 99, 224;
+  --bs-success: var(--al-green);
+  --bs-success-rgb: 31, 174, 89;
+  --bs-danger: var(--al-red);
+  --bs-warning: var(--al-orange);
+  --bs-body-font-family: var(--al-font-body);
+  --bs-body-color: var(--al-gray-900);
+  --bs-body-bg: var(--al-gray-050);
+  --bs-link-color: var(--al-blue);
+  --bs-link-hover-color: var(--al-blue-dark);
+  --bs-border-radius: 0.6rem;
+  --bs-border-radius-lg: 1rem;
+  --bs-border-radius-sm: 0.4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--al-font-body);
+  color: var(--al-gray-900);
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-display {
+  font-family: var(--al-font-display);
+  font-weight: 700;
+}
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--al-blue);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  z-index: 2000;
+  border-radius: 0 0 0.5rem 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* ---------- Focus states (accessibility) ---------- */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--al-orange);
+  outline-offset: 2px;
+}
+
+/* ---------- Top utility bar ---------- */
+.topbar {
+  background: var(--al-navy-900);
+  color: #e6e8ee;
+  font-size: 0.85rem;
+}
+.topbar a {
+  color: #cfd4e2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.topbar a:hover,
+.topbar a:focus-visible {
+  color: #fff;
+}
+
+/* ---------- Main navbar ---------- */
+.navbar-brand-text {
+  font-family: var(--al-font-display);
+  line-height: 1.1;
+}
+.navbar-brand-text .brand-name {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--al-navy-900);
+}
+.navbar-brand-text .brand-tag {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--al-gray-500);
+  text-transform: uppercase;
+}
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--al-blue);
+  border-radius: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.main-nav .nav-link {
+  --bs-nav-link-color: var(--al-gray-900);
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s ease;
+}
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus-visible {
+  color: var(--al-blue);
+}
+.main-nav .nav-link.active {
+  color: var(--al-blue);
+}
+.main-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  right: 0.25rem;
+  bottom: -4px;
+  height: 2px;
+  background: var(--al-blue);
+  border-radius: 2px;
+}
+
+/* Button component overrides (utility vars alone don't reach these) */
+.btn {
+  --bs-btn-border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  --bs-btn-bg: var(--al-blue);
+  --bs-btn-border-color: var(--al-blue);
+  --bs-btn-hover-bg: var(--al-blue-dark);
+  --bs-btn-hover-border-color: var(--al-blue-dark);
+  --bs-btn-active-bg: var(--al-blue-dark);
+  --bs-btn-active-border-color: var(--al-blue-dark);
+  --bs-btn-focus-shadow-rgb: 61, 99, 224;
+}
+.btn-success {
+  --bs-btn-bg: var(--al-green);
+  --bs-btn-border-color: var(--al-green);
+  --bs-btn-hover-bg: var(--al-green-dark);
+  --bs-btn-hover-border-color: var(--al-green-dark);
+  --bs-btn-active-bg: var(--al-green-dark);
+  --bs-btn-focus-shadow-rgb: 31, 174, 89;
+}
+.btn-outline-light {
+  --bs-btn-hover-bg: rgba(255,255,255,0.15);
+  --bs-btn-hover-color: #fff;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--al-blue);
+  --bs-btn-border-color: var(--al-blue);
+  --bs-btn-hover-bg: var(--al-blue);
+  --bs-btn-hover-border-color: var(--al-blue);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--al-navy-900) 0%, var(--al-navy-700) 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hero-eyebrow {
+  color: var(--al-orange);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.hero .lead {
+  color: #d6dbea;
+}
+.hero-media {
+  border-radius: var(--bs-border-radius-lg);
+  overflow: hidden;
+}
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Quick link icon cards ---------- */
+.quick-link-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 0.6rem;
+  background: rgba(61, 99, 224, 0.1);
+  color: var(--al-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick-link-card a {
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.quick-link-card a:hover,
+.quick-link-card a:focus-visible {
+  color: var(--al-blue-dark);
+  text-decoration: underline;
+}
+
+/* ---------- Section eyebrow ---------- */
+.section-eyebrow {
+  color: var(--al-orange-dark);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* ---------- Program / offering cards ---------- */
+.offer-card,
+.program-card,
+.facility-card,
+.event-card,
+.news-card {
+  background: #fff;
+  border-radius: var(--bs-border-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--al-gray-100);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  height: 100%;
+}
+.offer-card:hover,
+.program-card:hover,
+.facility-card:hover,
+.news-card:hover {
+  box-shadow: 0 1rem 2rem rgba(15, 27, 61, 0.12);
+  transform: translateY(-4px);
+}
+.card-img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.offer-card:hover .card-img-wrap img,
+.program-card:hover .card-img-wrap img {
+  transform: scale(1.05);
+}
+.card-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.card-badge.badge-popular { background: var(--al-blue); }
+.card-badge.badge-new { background: var(--al-green); }
+.card-badge.badge-dropin { background: var(--al-orange); }
+.card-badge.badge-full { background: var(--al-red); }
+.card-badge.badge-camp { background: var(--al-orange-dark); }
+
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--al-gray-500);
+}
+.meta-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- Category filter pills ---------- */
+.filter-pill {
+  --bs-btn-border-radius: 2rem;
+  font-weight: 600;
+}
+
+/* ---------- CTA banners ---------- */
+.cta-banner {
+  background: linear-gradient(135deg, var(--al-blue) 0%, var(--al-blue-dark) 100%);
+  color: #fff;
+  border-radius: var(--bs-border-radius-lg);
+}
+.cta-banner .btn-light {
+  --bs-btn-color: var(--al-blue);
+}
+.summer-banner {
+  background: linear-gradient(135deg, var(--al-orange) 0%, var(--al-orange-dark) 100%);
+  color: #fff;
+  border-radius: var(--bs-border-radius-lg);
+}
+.dark-cta {
+  background: var(--al-navy-900);
+  color: #fff;
+  border-radius: var(--bs-border-radius-lg);
+}
+
+/* ---------- Facility tabs ---------- */
+.facility-tabs .nav-link {
+  --bs-nav-link-color: var(--al-gray-900);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 1px solid var(--al-gray-100);
+  margin-right: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.facility-tabs .nav-link.active {
+  background: var(--al-blue);
+  color: #fff;
+  border-color: var(--al-blue);
+}
+.facility-tabs .nav-link:hover:not(.active) {
+  background: var(--al-gray-100);
+}
+
+.feature-check {
+  color: var(--al-green);
+}
+
+.schedule-item {
+  background: var(--al-gray-050);
+  border-radius: 0.6rem;
+  padding: 1rem 1.1rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--al-navy-900);
+  color: #cfd4e2;
+}
+.site-footer h2,
+.site-footer h3 {
+  color: var(--al-orange);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--al-font-body);
+  font-weight: 700;
+}
+.site-footer a {
+  color: #cfd4e2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+}
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.social-icon:hover,
+.social-icon:focus-visible {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+.social-icon.fb { background: #3b5cad; }
+.social-icon.ig { background: #c74caa; }
+.social-icon.tw { background: #35a4dc; }
+.social-icon.yt { background: #e34141; }
+
+/* ---------- Map placeholder ---------- */
+.map-placeholder {
+  background: var(--al-gray-100);
+  border-radius: var(--bs-border-radius-lg);
+  min-height: 260px;
+}
+
+/* ---------- Utilities ---------- */
+.text-blue { color: var(--al-blue); }
+.text-orange { color: var(--al-orange-dark); }
+.bg-navy { background: var(--al-navy-900); }
+.rounded-xl { border-radius: var(--bs-border-radius-lg); }
+
+/* ---------- Responsive tuning (mobile-first, beyond Bootstrap defaults) ---------- */
+@media (max-width: 375px) {
+  .hero h1 { font-size: 1.9rem; }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl-narrow {
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+}

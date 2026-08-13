@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Facilities | Active Life Centre</title>
+<meta name="description" content="Explore Active Life Centre's Aquatic Centre, Ice Rink, Fitness Gym, and Wellness Area &mdash; modern, accessible amenities for Ottawa's entire community.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="topbar py-2">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="d-flex flex-wrap gap-3">
+      <span>&#128337; Mon&ndash;Fri: 6&nbsp;AM&ndash;10&nbsp;PM | Sat&ndash;Sun: 7&nbsp;AM&ndash;9&nbsp;PM</span>
+      <span>&#128205; 100 Recreational Dr, Ottawa, ON</span>
+    </div>
+    <div class="d-none d-md-flex gap-3">
+      <a href="#">Careers</a>
+      <a href="#">News</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-white py-3 main-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2 6 4-14 2 8h8"/></svg>
+        </span>
+        <span class="navbar-brand-text">
+          <span class="brand-name">ACTIVE LIFE CENTRE</span>
+          <span class="brand-tag">Your Community. Your Centre.</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto gap-lg-2 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#memberships">Memberships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-outline-primary btn-sm align-self-center">Sign In</a>
+          <a href="#" class="btn btn-success btn-sm">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- Hero -->
+  <section class="hero py-5" aria-labelledby="hero-heading">
+    <div class="container py-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div data-aos="fade-right">
+          <p class="hero-eyebrow mb-2">Active Life Centre</p>
+          <h1 id="hero-heading" class="display-5 fw-bold mb-2">Our Facilities</h1>
+          <p class="lead mb-0">Modern, accessible amenities built for Ottawa's entire community.</p>
+        </div>
+        <a href="#" class="btn btn-success btn-lg" data-aos="fade-left">Book a Facility &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete recreation destination banner -->
+  <section class="py-5" aria-labelledby="banner-heading">
+    <div class="container">
+      <div class="rounded-xl overflow-hidden position-relative" data-aos="fade-up">
+        <img src="https://picsum.photos/seed/al-banner/1400/500"
+             srcset="https://picsum.photos/seed/al-banner/1400/500 1400w, https://picsum.photos/seed/al-banner/700/250 700w"
+             sizes="100vw"
+             alt="Wide view of the Aquatic Centre lap pool" class="w-100" style="height: 320px; object-fit: cover;">
+        <div class="position-absolute top-0 start-0 h-100 d-flex align-items-center p-4 p-md-5" style="background: linear-gradient(90deg, rgba(11,21,48,0.85) 40%, rgba(11,21,48,0.1) 100%); width:100%;">
+          <div class="text-white" style="max-width: 32rem;">
+            <h2 id="banner-heading" class="fw-bold h1">A Complete Recreation Destination</h2>
+            <p class="mb-0 text-white-50">Everything you need under one roof&mdash;pool, rink, gym, and wellness&mdash;designed for maximum accessibility and comfort for every age.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facility tabs -->
+  <section class="py-5 bg-white" aria-labelledby="tabs-heading">
+    <div class="container">
+      <h2 id="tabs-heading" class="visually-hidden">Facility details</h2>
+
+      <ul class="nav facility-tabs flex-wrap mb-4" id="facilityTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="aquatic-tab" data-bs-toggle="tab" data-bs-target="#aquatic-pane" type="button" role="tab" aria-controls="aquatic-pane" aria-selected="true">Aquatic Centre</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="rink-tab" data-bs-toggle="tab" data-bs-target="#rink-pane" type="button" role="tab" aria-controls="rink-pane" aria-selected="false">Ice Rink</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="gym-tab" data-bs-toggle="tab" data-bs-target="#gym-pane" type="button" role="tab" aria-controls="gym-pane" aria-selected="false">Fitness Gym</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="wellness-tab" data-bs-toggle="tab" data-bs-target="#wellness-pane" type="button" role="tab" aria-controls="wellness-pane" aria-selected="false">Wellness Area</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="facilityTabContent">
+
+        <!-- Aquatic Centre -->
+        <div class="tab-pane fade show active" id="aquatic-pane" role="tabpanel" aria-labelledby="aquatic-tab" tabindex="0">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rounded-xl overflow-hidden ratio ratio-4x3">
+                <img src="https://picsum.photos/seed/al-aquatic2/700/525"
+                     srcset="https://picsum.photos/seed/al-aquatic2/700/525 700w, https://picsum.photos/seed/al-aquatic2/1200/900 1200w"
+                     sizes="(max-width: 992px) 100vw, 50vw"
+                     alt="25-metre indoor lap pool with red and blue lane dividers">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold">&#127946; Aquatic Centre</h3>
+              <p class="text-muted">25-metre indoor pool with leisure zone and toddler splash area</p>
+              <h4 class="h6 text-uppercase text-muted mt-4">Features &amp; Amenities</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> 25-metre, 6-lane lap pool</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Leisure pool with water slide</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Toddler splash pad zone</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Accessible ramp entries</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Heated to 29&deg;C year-round</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Lifeguards on duty at all times</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-lg">Book Lane Swim &rarr;</a>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-1">
+            <div class="col-12">
+              <h4 class="h6 text-uppercase text-muted">&#128197; Aquatic Centre Schedule</h4>
+              <div class="row g-3">
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Lap Swim (Adults)</p><p class="small text-muted mb-0">Mon&ndash;Fri: 6&ndash;8 AM, 12&ndash;1 PM, 7&ndash;9 PM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Family Swim</p><p class="small text-muted mb-0">Sat&ndash;Sun: 1:00&ndash;3:00 PM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Aqua Fit Classes</p><p class="small text-muted mb-0">Mon, Wed, Fri: 9&ndash;10 AM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Lessons (Youth)</p><p class="small text-muted mb-0">Mon, Wed, Fri: 4&ndash;5 PM</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ice Rink -->
+        <div class="tab-pane fade" id="rink-pane" role="tabpanel" aria-labelledby="rink-tab" tabindex="0">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rounded-xl overflow-hidden ratio ratio-4x3">
+                <img src="https://picsum.photos/seed/al-rink2/700/525"
+                     srcset="https://picsum.photos/seed/al-rink2/700/525 700w, https://picsum.photos/seed/al-rink2/1200/900 1200w"
+                     sizes="(max-width: 992px) 100vw, 50vw"
+                     alt="NHL-size indoor ice rink with hockey players skating">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold">&#9975; Ice Rink</h3>
+              <p class="text-muted">NHL-size ice surface for public skating, hockey, and figure skating</p>
+              <h4 class="h6 text-uppercase text-muted mt-4">Features &amp; Amenities</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Full NHL-size ice surface</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Skate rental &amp; sharpening on site</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Accessible viewing gallery</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Climate-controlled year-round</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-lg">Book Ice Time &rarr;</a>
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12">
+              <h4 class="h6 text-uppercase text-muted">&#128197; Ice Rink Schedule</h4>
+              <div class="row g-3">
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Public Skating</p><p class="small text-muted mb-0">Daily: 12&ndash;1:30 PM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Youth Hockey</p><p class="small text-muted mb-0">Sat, Sun: 10&ndash;11:30 AM</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fitness Gym -->
+        <div class="tab-pane fade" id="gym-pane" role="tabpanel" aria-labelledby="gym-tab" tabindex="0">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rounded-xl overflow-hidden ratio ratio-4x3">
+                <img src="https://picsum.photos/seed/al-gym2/700/525"
+                     srcset="https://picsum.photos/seed/al-gym2/700/525 700w, https://picsum.photos/seed/al-gym2/1200/900 1200w"
+                     sizes="(max-width: 992px) 100vw, 50vw"
+                     alt="Fitness gym with cardio machines and free weights">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold">&#127940; Fitness Gym</h3>
+              <p class="text-muted">Fully-equipped gym floor with cardio, weights, and studio space</p>
+              <h4 class="h6 text-uppercase text-muted mt-4">Features &amp; Amenities</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Cardio &amp; strength equipment</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Personal training available</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Group class studio</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Accessible equipment options</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-lg">Book a Tour &rarr;</a>
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12">
+              <h4 class="h6 text-uppercase text-muted">&#128197; Gym Hours</h4>
+              <div class="row g-3">
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Open Gym</p><p class="small text-muted mb-0">Mon&ndash;Fri: 6 AM&ndash;10 PM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Group Classes</p><p class="small text-muted mb-0">Tue, Thu: 6:30&ndash;7:30 AM</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wellness Area -->
+        <div class="tab-pane fade" id="wellness-pane" role="tabpanel" aria-labelledby="wellness-tab" tabindex="0">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rounded-xl overflow-hidden ratio ratio-4x3">
+                <img src="https://picsum.photos/seed/al-wellarea2/700/525"
+                     srcset="https://picsum.photos/seed/al-wellarea2/700/525 700w, https://picsum.photos/seed/al-wellarea2/1200/900 1200w"
+                     sizes="(max-width: 992px) 100vw, 50vw"
+                     alt="Quiet wellness studio used for yoga and relaxation">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold">&#128154; Wellness Area</h3>
+              <p class="text-muted">A calm space for yoga, mindfulness, and recovery</p>
+              <h4 class="h6 text-uppercase text-muted mt-4">Features &amp; Amenities</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Steam room &amp; sauna</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Yoga &amp; mindfulness studio</li>
+                <li class="mb-2"><span class="feature-check" aria-hidden="true">&#10003;</span> Quiet lounge for relaxation</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-lg">Book a Session &rarr;</a>
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12">
+              <h4 class="h6 text-uppercase text-muted">&#128197; Wellness Schedule</h4>
+              <div class="row g-3">
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Yoga &amp; Mindfulness</p><p class="small text-muted mb-0">Tue, Thu: 7&ndash;8 PM</p></div></div>
+                <div class="col-md-6"><div class="schedule-item"><p class="fw-bold mb-0">Steam Room Access</p><p class="small text-muted mb-0">Daily: 6 AM&ndash;10 PM</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours / contact / map -->
+  <section class="py-5" aria-labelledby="hours-heading">
+    <div class="container">
+      <h2 id="hours-heading" class="visually-hidden">Hours, contact, and location</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="bg-white rounded-xl p-4 h-100 border">
+            <h3 class="h6">&#128337; Hours of Operation</h3>
+            <ul class="list-unstyled small mb-0">
+              <li class="d-flex justify-content-between py-1 border-bottom"><span>Monday&ndash;Friday</span><span>6:00 AM&ndash;10:00 PM</span></li>
+              <li class="d-flex justify-content-between py-1 border-bottom"><span>Saturday</span><span>7:00 AM&ndash;9:00 PM</span></li>
+              <li class="d-flex justify-content-between py-1 border-bottom"><span>Sunday</span><span>8:00 AM&ndash;8:00 PM</span></li>
+              <li class="d-flex justify-content-between py-1"><span>Statutory Holidays</span><span>9:00 AM&ndash;5:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="75">
+          <div class="bg-white rounded-xl p-4 h-100 border">
+            <h3 class="h6">&#128222; Contact Information</h3>
+            <address class="small" style="font-style: normal;">
+              100 Recreational Drive, Ottawa, ON K2T 0A1<br>
+              <a href="tel:6135551234">613-555-1234</a><br>
+              <a href="mailto:info@activelifecentre.ca">info@activelifecentre.ca</a>
+            </address>
+            <div class="d-flex gap-2 mt-3">
+              <a href="tel:6135551234" class="btn btn-primary btn-sm">Call Now</a>
+              <a href="#" class="btn btn-outline-primary btn-sm">Get Directions</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="map-placeholder d-flex flex-column align-items-center justify-content-center text-center p-4 h-100">
+            <p class="fw-bold mb-1">100 Recreational Drive</p>
+            <p class="small text-muted mb-3">Ottawa, ON K2T 0A1</p>
+            <a href="#" class="btn btn-primary btn-sm">Open in Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer py-5" id="contact">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2 6 4-14 2 8h8"/></svg>
+          </span>
+          <span class="text-white fw-bold">ACTIVE LIFE CENTRE<br><small class="text-white-50 fw-normal">Ottawa, ON</small></span>
+        </div>
+        <p class="small">Everyone, Every Age, Every Day. A place to move, connect, and belong in the heart of Ottawa.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon fb" aria-label="Active Life Centre on Facebook">F</a>
+          <a href="#" class="social-icon ig" aria-label="Active Life Centre on Instagram">IG</a>
+          <a href="#" class="social-icon tw" aria-label="Active Life Centre on Twitter">TW</a>
+          <a href="#" class="social-icon yt" aria-label="Active Life Centre on YouTube">YT</a>
+        </div>
+      </div>
+      <nav class="col-6 col-lg-3" aria-label="Quick links">
+        <h2>Quick Links</h2>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="programs.html">Programs &amp; Activities</a></li>
+          <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+          <li class="mb-2"><a href="index.html#memberships">Memberships &amp; Pricing</a></li>
+          <li class="mb-2"><a href="#">Events Calendar</a></li>
+          <li class="mb-2"><a href="programs.html">Summer Camps</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="col-6 col-lg-2">
+        <h2>Hours</h2>
+        <ul class="list-unstyled small">
+          <li class="mb-2 d-flex justify-content-between"><span>Mon&ndash;Fri</span><span>6&ndash;10</span></li>
+          <li class="mb-2 d-flex justify-content-between"><span>Sat</span><span>7&ndash;9</span></li>
+          <li class="mb-2 d-flex justify-content-between"><span>Sun</span><span>8&ndash;8</span></li>
+          <li class="d-flex justify-content-between"><span>Holidays</span><span>9&ndash;5</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h2>Contact Us</h2>
+        <address class="small mb-0" style="font-style: normal;">
+          100 Recreational Drive<br>Ottawa, ON K2T 0A1<br>
+          <a href="tel:6135551234">613-555-1234</a><br>
+          <a href="mailto:info@activelifecentre.ca">info@activelifecentre.ca</a>
+        </address>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="small text-center text-white-50 mb-0">&copy; 2025 Active Life Centre &mdash; Community Recreation Centre, Ottawa, Ontario. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 600, offset: 80 });
+</script>
+</body>
+</html>

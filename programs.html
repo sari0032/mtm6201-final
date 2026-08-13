@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs &amp; Activities | Active Life Centre</title>
+<meta name="description" content="Browse swimming, fitness, ice skating, wellness, youth, and senior programs at Active Life Centre in Ottawa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="topbar py-2">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="d-flex flex-wrap gap-3">
+      <span>&#128337; Mon&ndash;Fri: 6&nbsp;AM&ndash;10&nbsp;PM | Sat&ndash;Sun: 7&nbsp;AM&ndash;9&nbsp;PM</span>
+      <span>&#128205; 100 Recreational Dr, Ottawa, ON</span>
+    </div>
+    <div class="d-none d-md-flex gap-3">
+      <a href="#">Careers</a>
+      <a href="#">News</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-white py-3 main-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2 6 4-14 2 8h8"/></svg>
+        </span>
+        <span class="navbar-brand-text">
+          <span class="brand-name">ACTIVE LIFE CENTRE</span>
+          <span class="brand-tag">Your Community. Your Centre.</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto gap-lg-2 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#memberships">Memberships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-outline-primary btn-sm align-self-center">Sign In</a>
+          <a href="#" class="btn btn-success btn-sm">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- Hero -->
+  <section class="hero py-5" aria-labelledby="hero-heading">
+    <div class="container py-3" data-aos="fade-right">
+      <p class="hero-eyebrow mb-2">Active Life Centre</p>
+      <h1 id="hero-heading" class="display-5 fw-bold mb-2">Programs &amp; Activities</h1>
+      <p class="lead mb-0">Find the perfect program for every member of your family.</p>
+    </div>
+  </section>
+
+  <!-- Search & filters -->
+  <section class="py-5" aria-labelledby="search-heading">
+    <div class="container">
+      <h2 id="search-heading" class="visually-hidden">Search and filter programs</h2>
+
+      <form class="row g-2 mb-4" role="search" onsubmit="return false;">
+        <div class="col-sm-9">
+          <label for="programSearch" class="visually-hidden">Search by name, age group, or activity</label>
+          <input type="search" id="programSearch" class="form-control form-control-lg" placeholder="Search by name, age group, or activity...">
+        </div>
+        <div class="col-sm-3">
+          <button type="submit" class="btn btn-primary btn-lg w-100">&#128269; Search</button>
+        </div>
+      </form>
+
+      <div class="d-flex flex-wrap gap-2 mb-2" role="group" aria-label="Filter programs by category">
+        <button type="button" class="btn btn-primary filter-pill active" data-filter="all">All Programs</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="swimming">Swimming</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="fitness">Fitness</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="ice-skating">Ice Skating</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="wellness">Wellness</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="youth">Youth</button>
+        <button type="button" class="btn btn-outline-primary filter-pill" data-filter="seniors">Seniors</button>
+      </div>
+      <p class="text-muted small" id="resultsCount">Showing <span id="resultsNum">9</span> programs</p>
+    </div>
+  </section>
+
+  <!-- Program cards -->
+  <section class="pb-5" aria-labelledby="programs-heading">
+    <div class="container">
+      <h2 id="programs-heading" class="visually-hidden">Program list</h2>
+      <div class="row g-4" id="programGrid">
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="swimming youth" data-name="swimming lessons" data-aos="fade-up">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-popular">Popular</span>
+              <img src="https://picsum.photos/seed/prog-swim/500/375" srcset="https://picsum.photos/seed/prog-swim/500/375 500w, https://picsum.photos/seed/prog-swim/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Youth swimming lesson in the lap pool">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Swimming Lessons</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Youth (5&ndash;12)</li>
+                <li>&#128337; Mon, Wed, Fri &mdash; 4:00&ndash;5:00 PM</li>
+                <li>&#11088; $120 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">6 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="fitness" data-name="adult fitness classes" data-aos="fade-up" data-aos-delay="50">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/prog-fitness/500/375" srcset="https://picsum.photos/seed/prog-fitness/500/375 500w, https://picsum.photos/seed/prog-fitness/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Adults doing lunges with dumbbells in a fitness class">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Adult Fitness Classes</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Adults (18+)</li>
+                <li>&#128337; Tue, Thu &mdash; 6:30&ndash;7:30 AM</li>
+                <li>&#11088; $95 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">12 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="ice-skating youth" data-name="youth ice skating" data-aos="fade-up" data-aos-delay="100">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-new">New</span>
+              <img src="https://picsum.photos/seed/prog-icesk/500/375" srcset="https://picsum.photos/seed/prog-icesk/500/375 500w, https://picsum.photos/seed/prog-icesk/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Youth hockey players practicing on the ice rink">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Youth Ice Skating</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Youth (6&ndash;14)</li>
+                <li>&#128337; Sat, Sun &mdash; 10:00&ndash;11:30 AM</li>
+                <li>&#11088; $110 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">8 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="wellness seniors" data-name="senior wellness program" data-aos="fade-up">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-dropin">Drop-in</span>
+              <img src="https://picsum.photos/seed/prog-senior/500/375" srcset="https://picsum.photos/seed/prog-senior/500/375 500w, https://picsum.photos/seed/prog-senior/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Bright studio hallway used for the senior wellness program">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Senior Wellness Program</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Seniors (60+)</li>
+                <li>&#128337; Mon, Wed &mdash; 10:00&ndash;11:00 AM</li>
+                <li>&#11088; $85 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">15 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="swimming" data-name="family swim sessions" data-aos="fade-up" data-aos-delay="50">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-dropin">Drop-in</span>
+              <img src="https://picsum.photos/seed/prog-famswim/500/375" srcset="https://picsum.photos/seed/prog-famswim/500/375 500w, https://picsum.photos/seed/prog-famswim/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Families swimming together during family swim session">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Family Swim Sessions</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; All Ages</li>
+                <li>&#128337; Sat &mdash; 1:00&ndash;3:00 PM</li>
+                <li>&#11088; $15 / visit (drop-in)</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">30 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="wellness" data-name="yoga and mindfulness" data-aos="fade-up" data-aos-delay="100">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/prog-yoga/500/375" srcset="https://picsum.photos/seed/prog-yoga/500/375 500w, https://picsum.photos/seed/prog-yoga/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Calm studio room used for yoga and mindfulness class">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Yoga &amp; Mindfulness</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Adults (18+)</li>
+                <li>&#128337; Tue, Thu &mdash; 7:00&ndash;8:00 PM</li>
+                <li>&#11088; $100 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">20 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="swimming fitness" data-name="aqua aerobics" data-aos="fade-up">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-full">Almost Full</span>
+              <img src="https://picsum.photos/seed/prog-aqua/500/375" srcset="https://picsum.photos/seed/prog-aqua/500/375 500w, https://picsum.photos/seed/prog-aqua/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Adults exercising in the pool during aqua aerobics">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Aqua Aerobics</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Adults (40+)</li>
+                <li>&#128337; Mon, Wed, Fri &mdash; 9:00&ndash;10:00 AM</li>
+                <li>&#11088; $110 / 8-week session</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-danger fw-bold">3 spots left</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="ice-skating youth" data-name="hockey skills camp" data-aos="fade-up" data-aos-delay="50">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-camp">Summer Camp</span>
+              <img src="https://picsum.photos/seed/prog-hockey/500/375" srcset="https://picsum.photos/seed/prog-hockey/500/375 500w, https://picsum.photos/seed/prog-hockey/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Youth practicing hockey skills on the ice rink at dusk">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Hockey Skills Camp</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; Youth (8&ndash;16)</li>
+                <li>&#128337; Daily &mdash; Jul 7&ndash;11 | 9:00 AM&ndash;3:00 PM</li>
+                <li>&#11088; $350 / week</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-danger-subtle text-danger">Waitlist Only</span>
+                <a href="#" class="btn btn-outline-primary btn-sm">Join Waitlist</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 program-item" data-category="fitness" data-name="community zumba" data-aos="fade-up" data-aos-delay="100">
+          <article class="program-card">
+            <div class="card-img-wrap">
+              <span class="card-badge badge-dropin">Drop-in</span>
+              <img src="https://picsum.photos/seed/prog-zumba/500/375" srcset="https://picsum.photos/seed/prog-zumba/500/375 500w, https://picsum.photos/seed/prog-zumba/900/675 900w" sizes="(max-width: 576px) 100vw, 33vw" alt="Group fitness class dancing during community zumba">
+            </div>
+            <div class="p-3">
+              <h3 class="h6">Community Zumba</h3>
+              <ul class="meta-list mb-3">
+                <li>&#128101; All Adults</li>
+                <li>&#128337; Fri &mdash; 5:30&ndash;6:30 PM</li>
+                <li>&#11088; $10 / drop-in</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted">25 spots available</span>
+                <a href="#" class="btn btn-success btn-sm">Register &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <p class="text-center text-muted d-none py-5" id="noResults">No programs match your search. Try a different name, age group, or category.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pb-5" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner p-5 text-center" data-aos="zoom-in">
+        <h2 id="cta-heading" class="fw-bold mb-2">Not Sure Where to Start?</h2>
+        <p class="mb-4">Our friendly staff can help you find the right program for your age, ability, and schedule.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#" class="btn btn-light btn-lg">Register Now</a>
+          <a href="#" class="btn btn-outline-light btn-lg">View Full Schedule</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer py-5" id="contact">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2 6 4-14 2 8h8"/></svg>
+          </span>
+          <span class="text-white fw-bold">ACTIVE LIFE CENTRE<br><small class="text-white-50 fw-normal">Ottawa, ON</small></span>
+        </div>
+        <p class="small">Everyone, Every Age, Every Day. A place to move, connect, and belong in the heart of Ottawa.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon fb" aria-label="Active Life Centre on Facebook">F</a>
+          <a href="#" class="social-icon ig" aria-label="Active Life Centre on Instagram">IG</a>
+          <a href="#" class="social-icon tw" aria-label="Active Life Centre on Twitter">TW</a>
+          <a href="#" class="social-icon yt" aria-label="Active Life Centre on YouTube">YT</a>
+        </div>
+      </div>
+      <nav class="col-6 col-lg-3" aria-label="Quick links">
+        <h2>Quick Links</h2>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="programs.html">Programs &amp; Activities</a></li>
+          <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+          <li class="mb-2"><a href="index.html#memberships">Memberships &amp; Pricing</a></li>
+          <li class="mb-2"><a href="#">Events Calendar</a></li>
+          <li class="mb-2"><a href="programs.html">Summer Camps</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="col-6 col-lg-2">
+        <h2>Hours</h2>
+        <ul class="list-unstyled small">
+          <li class="mb-2 d-flex justify-content-between"><span>Mon&ndash;Fri</span><span>6&ndash;10</span></li>
+          <li class="mb-2 d-flex justify-content-between"><span>Sat</span><span>7&ndash;9</span></li>
+          <li class="mb-2 d-flex justify-content-between"><span>Sun</span><span>8&ndash;8</span></li>
+          <li class="d-flex justify-content-between"><span>Holidays</span><span>9&ndash;5</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h2>Contact Us</h2>
+        <address class="small mb-0" style="font-style: normal;">
+          100 Recreational Drive<br>Ottawa, ON K2T 0A1<br>
+          <a href="tel:6135551234">613-555-1234</a><br>
+          <a href="mailto:info@activelifecentre.ca">info@activelifecentre.ca</a>
+        </address>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="small text-center text-white-50 mb-0">&copy; 2025 Active Life Centre &mdash; Community Recreation Centre, Ottawa, Ontario. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 600, offset: 80 });
+
+  // Simple client-side search + category filter
+  (function () {
+    const items = Array.from(document.querySelectorAll('.program-item'));
+    const searchInput = document.getElementById('programSearch');
+    const filterButtons = Array.from(document.querySelectorAll('.filter-pill'));
+    const resultsNum = document.getElementById('resultsNum');
+    const noResults = document.getElementById('noResults');
+    let activeFilter = 'all';
+
+    function applyFilters() {
+      const term = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      items.forEach(function (item) {
+        const name = item.dataset.name || '';
+        const cats = (item.dataset.category || '').split(' ');
+        const matchesFilter = activeFilter === 'all' || cats.includes(activeFilter);
+        const matchesSearch = term === '' || name.includes(term);
+        const visible = matchesFilter && matchesSearch;
+        item.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+      });
+
+      resultsNum.textContent = visibleCount;
+      noResults.classList.toggle('d-none', visibleCount !== 0);
+    }
+
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterButtons.forEach(function (b) {
+          b.classList.remove('btn-primary', 'active');
+          b.classList.add('btn-outline-primary');
+        });
+        btn.classList.remove('btn-outline-primary');
+        btn.classList.add('btn-primary', 'active');
+        activeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+  })();
+</script>
+</body>
+</html>
