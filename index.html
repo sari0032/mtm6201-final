@@ -74,26 +74,23 @@
 <main id="main-content">
 
   <!-- Hero -->
-  <section class="hero py-5" aria-labelledby="hero-heading">
-    <div class="container py-4">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-aos="fade-right">
+  <section class="hero hero-full" aria-labelledby="hero-heading">
+    <img
+      class="hero-bg-img"
+      src="images/pool-small.jpg"
+      srcset="images/pool-small.jpg 640w, images/pool-large.jpg 1920w"
+      sizes="100vw"
+      alt="Wide indoor lap pool with red and blue lane dividers">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative py-5">
+      <div class="row">
+        <div class="col-lg-7" data-aos="fade-up">
           <p class="hero-eyebrow mb-2">Ottawa's Community Recreation Centre</p>
           <h1 id="hero-heading" class="display-5 fw-bold mb-3">A Place for Everyone. A Community for Life.</h1>
           <p class="lead mb-4">Programs, activities, and facilities for all ages and abilities. From toddlers to seniors&mdash;everyone belongs here.</p>
           <div class="d-flex flex-wrap gap-3">
             <a href="programs.html" class="btn btn-primary btn-lg">View Programs</a>
             <a href="facilities.html" class="btn btn-outline-light btn-lg">Explore Facilities</a>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="hero-media ratio ratio-4x3">
-            <img
-              src="https://picsum.photos/seed/al-hero/800/600"
-              srcset="https://picsum.photos/seed/al-hero/800/600 800w,
-                      https://picsum.photos/seed/al-hero/1400/1050 1400w"
-              sizes="(max-width: 992px) 100vw, 50vw"
-              alt="Swimmers using an indoor lap pool with red and blue lane dividers">
           </div>
         </div>
       </div>
@@ -111,19 +108,19 @@
           <p class="text-muted small">Find activities for every age group and interest.</p>
           <a href="programs.html">Browse Programs &rarr;</a>
         </div>
-        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up" data-aos-delay="75">
+        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up">
           <div class="quick-link-icon mb-3" aria-hidden="true">&#127939;</div>
           <h3 class="h6">Fitness &amp; Wellness</h3>
           <p class="text-muted small">Stay active with fitness classes, gym, and wellness programs.</p>
           <a href="facilities.html">Learn More &rarr;</a>
         </div>
-        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up">
           <div class="quick-link-icon mb-3" aria-hidden="true">&#128197;</div>
           <h3 class="h6">Schedules</h3>
           <p class="text-muted small">View drop-in times, class schedules, and facility hours.</p>
           <a href="programs.html">Check Schedules &rarr;</a>
         </div>
-        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up" data-aos-delay="225">
+        <div class="col-sm-6 col-lg-3 quick-link-card" data-aos="fade-up">
           <div class="quick-link-icon mb-3" aria-hidden="true">&#128154;</div>
           <h3 class="h6">Memberships</h3>
           <p class="text-muted small">Affordable options for individuals, families, and seniors.</p>
@@ -148,10 +145,7 @@
         <div class="col-sm-6 col-lg-3" data-aos="fade-up">
           <article class="offer-card">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-swim/500/375"
-                   srcset="https://picsum.photos/seed/al-swim/500/375 500w, https://picsum.photos/seed/al-swim/900/675 900w"
-                   sizes="(max-width: 576px) 100vw, 25vw"
-                   alt="Lap pool with lane ropes used for swimming and aquatics programs">
+              <img src="images/pool-small.jpg" srcset="images/pool-small.jpg 640w, images/pool-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Lap pool with lane ropes used for swimming and aquatics programs">
             </div>
             <div class="p-3">
               <h3 class="h6 mb-1">Swimming &amp; Aquatics</h3>
@@ -159,13 +153,10 @@
             </div>
           </article>
         </div>
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="75">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up">
           <article class="offer-card">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-ice/500/375"
-                   srcset="https://picsum.photos/seed/al-ice/500/375 500w, https://picsum.photos/seed/al-ice/900/675 900w"
-                   sizes="(max-width: 576px) 100vw, 25vw"
-                   alt="Youth hockey players skating on an indoor ice rink">
+              <img src="images/rink-small.jpg" srcset="images/rink-small.jpg 640w, images/rink-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Empty indoor ice rink being resurfaced between sessions">
             </div>
             <div class="p-3">
               <h3 class="h6 mb-1">Ice Skating</h3>
@@ -173,13 +164,10 @@
             </div>
           </article>
         </div>
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up">
           <article class="offer-card">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-fitness/500/375"
-                   srcset="https://picsum.photos/seed/al-fitness/500/375 500w, https://picsum.photos/seed/al-fitness/900/675 900w"
-                   sizes="(max-width: 576px) 100vw, 25vw"
-                   alt="Person using dumbbells during a group fitness class">
+              <img src="images/gym-small.jpg" srcset="images/gym-small.jpg 640w, images/gym-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Person loading weight plates onto a barbell in the fitness gym">
             </div>
             <div class="p-3">
               <h3 class="h6 mb-1">Fitness &amp; Gym</h3>
@@ -187,13 +175,10 @@
             </div>
           </article>
         </div>
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="225">
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up">
           <article class="offer-card">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-wellness/500/375"
-                   srcset="https://picsum.photos/seed/al-wellness/500/375 500w, https://picsum.photos/seed/al-wellness/900/675 900w"
-                   sizes="(max-width: 576px) 100vw, 25vw"
-                   alt="Bright studio room used for yoga and mindfulness sessions">
+              <img src="images/yoga-small.jpg" srcset="images/yoga-small.jpg 640w, images/yoga-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Group taking a yoga and mindfulness class on mats">
             </div>
             <div class="p-3">
               <h3 class="h6 mb-1">Wellness Programs</h3>
@@ -208,7 +193,7 @@
   <!-- Summer camp banner -->
   <section class="py-5" aria-labelledby="summer-heading">
     <div class="container">
-      <div class="summer-banner p-4 p-md-5" data-aos="zoom-in">
+      <div class="summer-banner p-4 p-md-5" data-aos="fade-up">
         <div class="row align-items-center g-3">
           <div class="col-md-8">
             <p class="fw-bold mb-1 text-uppercase small">Registration Now Open</p>
@@ -236,13 +221,10 @@
         <a href="facilities.html" class="btn btn-outline-primary">View All Facilities</a>
       </div>
       <div class="row g-4">
-        <div class="col-lg-6" data-aos="fade-right">
+        <div class="col-lg-6" data-aos="fade-up">
           <article class="facility-card h-100">
             <div class="card-img-wrap ratio ratio-16x9">
-              <img src="https://picsum.photos/seed/al-aquatic/700/450"
-                   srcset="https://picsum.photos/seed/al-aquatic/700/450 700w, https://picsum.photos/seed/al-aquatic/1200/770 1200w"
-                   sizes="(max-width: 992px) 100vw, 50vw"
-                   alt="25-metre indoor lap pool at the Aquatic Centre">
+              <img src="images/pool-small.jpg" srcset="images/pool-small.jpg 640w, images/pool-large.jpg 1920w" sizes="(max-width: 992px) 100vw, 50vw" alt="25-metre indoor lap pool at the Aquatic Centre">
             </div>
             <div class="p-3">
               <h3 class="h6 mb-1">Aquatic Centre</h3>
@@ -256,37 +238,28 @@
             <div class="col-sm-6" data-aos="fade-up">
               <article class="facility-card">
                 <div class="card-img-wrap">
-                  <img src="https://picsum.photos/seed/al-rink/450/338"
-                       srcset="https://picsum.photos/seed/al-rink/450/338 450w, https://picsum.photos/seed/al-rink/800/600 800w"
-                       sizes="(max-width: 576px) 100vw, 25vw"
-                       alt="Indoor ice rink used for public skating and hockey">
+                  <img src="images/rink-small.jpg" srcset="images/rink-small.jpg 640w, images/rink-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Indoor ice rink used for public skating and hockey">
                 </div>
                 <div class="p-3"><h3 class="h6 mb-0">Ice Rink</h3><p class="small text-muted mb-0">NHL-size &bull; public skating &bull; hockey</p></div>
               </article>
             </div>
-            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="75">
+            <div class="col-sm-6" data-aos="fade-up">
               <article class="facility-card">
                 <div class="card-img-wrap">
-                  <img src="https://picsum.photos/seed/al-gym/450/338"
-                       srcset="https://picsum.photos/seed/al-gym/450/338 450w, https://picsum.photos/seed/al-gym/800/600 800w"
-                       sizes="(max-width: 576px) 100vw, 25vw"
-                       alt="Fitness gym with weight machines and open floor space">
+                  <img src="images/gym-small.jpg" srcset="images/gym-small.jpg 640w, images/gym-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Fitness gym with free weights and open floor space">
                 </div>
                 <div class="p-3"><h3 class="h6 mb-0">Fitness Gym</h3><p class="small text-muted mb-0">Cardio, weights, open access</p></div>
               </article>
             </div>
-            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-sm-6" data-aos="fade-up">
               <article class="facility-card">
                 <div class="card-img-wrap">
-                  <img src="https://picsum.photos/seed/al-wellarea/450/338"
-                       srcset="https://picsum.photos/seed/al-wellarea/450/338 450w, https://picsum.photos/seed/al-wellarea/800/600 800w"
-                       sizes="(max-width: 576px) 100vw, 25vw"
-                       alt="Calm wellness area with soft lighting for relaxation">
+                  <img src="images/yoga-small.jpg" srcset="images/yoga-small.jpg 640w, images/yoga-large.jpg 1920w" sizes="(max-width: 576px) 100vw, 25vw" alt="Calm studio room used for yoga and wellness classes">
                 </div>
                 <div class="p-3"><h3 class="h6 mb-0">Wellness Area</h3><p class="small text-muted mb-0">Steam room &bull; studios</p></div>
               </article>
             </div>
-            <div class="col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="225">
+            <div class="col-sm-6 d-flex" data-aos="fade-up">
               <div class="facility-card d-flex align-items-center justify-content-center text-center p-3 w-100" style="background: var(--al-gray-050);">
                 <div>
                   <p class="fw-bold mb-1">See every facility</p>
@@ -320,7 +293,7 @@
             <p class="small text-muted mb-0">&#128337; 10:00 AM&ndash;4:00 PM</p>
           </article>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="75">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
           <article class="event-card p-3 h-100">
             <span class="badge bg-success mb-2">Seniors</span>
             <p class="fw-bold text-blue mb-1">Sat, Jul 26</p>
@@ -329,7 +302,7 @@
             <p class="small text-muted mb-0">&#128337; 9:00&ndash;11:30 AM</p>
           </article>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
           <article class="event-card p-3 h-100">
             <span class="badge bg-warning text-dark mb-2">Registration</span>
             <p class="fw-bold text-blue mb-1">Sat, Aug 2</p>
@@ -351,10 +324,7 @@
         <div class="col-md-4" data-aos="fade-up">
           <article class="news-card h-100">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-news1/500/333"
-                   srcset="https://picsum.photos/seed/al-news1/500/333 500w, https://picsum.photos/seed/al-news1/900/600 900w"
-                   sizes="(max-width: 768px) 100vw, 33vw"
-                   alt="Family walking together on an outdoor path near the centre">
+              <img src="images/group-small.jpg" srcset="images/group-small.jpg 640w, images/group-large.jpg 1920w" sizes="(max-width: 768px) 100vw, 33vw" alt="Group fitness class exercising together in the gymnasium">
             </div>
             <div class="p-3">
               <span class="badge bg-primary mb-2">Announcement</span>
@@ -364,13 +334,10 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="75">
+        <div class="col-md-4" data-aos="fade-up">
           <article class="news-card h-100">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-news2/500/333"
-                   srcset="https://picsum.photos/seed/al-news2/500/333 500w, https://picsum.photos/seed/al-news2/900/600 900w"
-                   sizes="(max-width: 768px) 100vw, 33vw"
-                   alt="Bright hallway inside the recreation centre">
+              <img src="images/hallway-small.jpg" srcset="images/hallway-small.jpg 640w, images/hallway-large.jpg 1920w" sizes="(max-width: 768px) 100vw, 33vw" alt="Bright hallway inside the recreation centre">
             </div>
             <div class="p-3">
               <span class="badge bg-success mb-2">Program Update</span>
@@ -380,13 +347,10 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-md-4" data-aos="fade-up">
           <article class="news-card h-100">
             <div class="card-img-wrap">
-              <img src="https://picsum.photos/seed/al-news3/500/333"
-                   srcset="https://picsum.photos/seed/al-news3/500/333 500w, https://picsum.photos/seed/al-news3/900/600 900w"
-                   sizes="(max-width: 768px) 100vw, 33vw"
-                   alt="Outdoor ice rink at dusk">
+              <img src="images/rink-small.jpg" srcset="images/rink-small.jpg 640w, images/rink-large.jpg 1920w" sizes="(max-width: 768px) 100vw, 33vw" alt="Empty ice rink prepared ahead of hockey camp">
             </div>
             <div class="p-3">
               <span class="badge bg-warning text-dark mb-2">Community</span>
@@ -403,7 +367,7 @@
   <!-- CTA -->
   <section class="py-5" aria-labelledby="cta-heading">
     <div class="container">
-      <div class="dark-cta p-5 text-center" data-aos="zoom-in">
+      <div class="dark-cta p-5 text-center" data-aos="fade-up">
         <h2 id="cta-heading" class="fw-bold mb-2">Ready to Get Started?</h2>
         <p class="text-white-50 mb-4">Join thousands of Ottawa residents who call Active Life Centre their second home. Memberships, drop-ins, and programs for every lifestyle.</p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
@@ -475,7 +439,7 @@
 <!-- AOS JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-  AOS.init({ once: true, duration: 600, offset: 80 });
+  AOS.init({ once: true, duration: 400, offset: 60, easing: 'ease-out' });
 </script>
 </body>
 </html>
